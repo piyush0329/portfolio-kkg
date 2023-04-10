@@ -97,8 +97,10 @@ nav ul li a:hover::after {
   flex-basis: 60%;
 }
 .sub-title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
+  padding-top: 70px;
+  text-align: center;
   color: #fff;
 }
 .tab-titles {
