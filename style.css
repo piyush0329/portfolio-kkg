@@ -123,7 +123,7 @@ nav ul li a:hover::after {
   width: 80%;
 }
 .tab-contents ul li {
-  list-style: none;
+  list-style: disc;
   margin: 10px 0;
 }
 .tab-contents ul li span  
@@ -177,7 +177,7 @@ nav ul li a:hover::after {
 }
 .learn_more:hover {
   text-decoration: underline;
-  font-weight: bold;
+  font-weight:bold;
 }
 /* ---------portfolio------- */
 #protfolio {
@@ -446,9 +446,13 @@ nav .fa-solid {
   .about-col-2 {
     font-size: 14px;
   }
-  .tab-links {
+  .tab-contents ul li span {
+    color: #ff004f;
     font-size: 16px;
-    margin-right: 20px;
+}
+  .tab-links {
+    font-size: 14px;
+    margin-right: 15px;
   }
   .contact-left,
   .contact-right {
@@ -474,7 +478,7 @@ nav .fa-solid {
   padding-right: 15px;
   text-decoration: none;
   color: #fff;
-  text-align: justify;
+  
 }
 .list-view div {
   transition: background 0.5s, transform 0.5s;
