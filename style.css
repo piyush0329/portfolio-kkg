@@ -397,86 +397,6 @@ nav .fa-solid {
   display: none;
 }
 
-/* css for small screen */
-
-@media only screen and (max-width: 768px) {
-  #header {
-    background-image: url(images/phonebg.jpg);
-  }
-  .header-text {
-    padding-top: 50px;
-    margin-top: auto;
-    font-size: 16px;
-  }
-  .header-text h1 {
-    font-size: 23px;
-  }
-  nav .fa-solid {
-    display: block;
-    font-size: 25px;
-  }
-  nav ul {
-    background: #ff004f;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 25px;
-  }
-  nav ul .fa-solid {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-  }
-  .sub-title {
-    margin-top: 40px;
-    font-size: 30px;
-  }
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-  }
-  .about-col-1 {
-    margin-bottom: 30px;
-  }
-  .about-col-2 p{
-    font-size: 14px;
-  }
-  .tab-contents ul li span {
-    color: #ff004f;
-    font-size: 16px;
-}
-  .tab-links {
-    font-size: 15px;
-    margin-right: 16px;
-  }
-  .contact-left,
-  .contact-right {
-    flex-basis: 100%;
-  }
-  .list-view div a{
-    font-size: 13px;
-  }
-  .services-list div h2 {
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 15px;
-  }
-
-  .services-list div p{
-    margin-right: 15px;
-  }
-  
-}
-
 /* ----another page  css---- */
 .list-view{
   display: block;
@@ -547,6 +467,7 @@ nav .fa-solid {
   grid-gap: 40px;
   margin-top: 50px;
 }
+
 .consultancy-projects div {
   background: #262626;
   padding: 40px;
@@ -583,4 +504,132 @@ nav .fa-solid {
 
 .link-style:hover{
   cursor:pointer;
+}
+
+/* css for small screen */
+
+@media only screen and (max-width: 768px) {
+  #header {
+    background-image: url(images/phonebg.jpg);
+  }
+  .header-text {
+    padding-top: 50px;
+    margin-top: auto;
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 23px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .container {
+  padding: 5px 10%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 p{
+    font-size: 14px;
+  }
+  .tab-contents ul li span {
+    color: #ff004f;
+    font-size: 16px;
+  }
+  .tab-links {
+    font-size: 15px;
+    margin-right: 16px;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .list-view div a{
+    font-size: 13px;
+  }
+  .services-list div h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  }
+
+  .services-list div p{
+    margin-right: 15px;
+  }
+
+  .award div h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  }
+  
+  .consultancy-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .consultancy-projects div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  border: 5px solid #262626;
+}
+.consultancy-projects div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.consultancy-projects div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.consultancy-projects div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+  cursor: none; 
+  
+}
+.consultancy-projects div:hover {
+  border: 5px solid #ff004f;
+}
 }
