@@ -535,6 +535,13 @@ nav .fa-solid {
     z-index: 2;
     transition: 0.5s;
   }
+  .container {
+  padding: 5px 10%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
   nav ul li {
     display: block;
     margin: 25px;
