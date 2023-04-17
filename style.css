@@ -19,7 +19,11 @@ body {
   background-position: center;
 }
 .container {
-  padding: 10px 10%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  
 }
 nav {
   display: flex;
@@ -429,9 +433,8 @@ nav .fa-solid {
   background-color: #ff004f;
 }
 .award {
-  display: flex;
-  flex-direction: column;
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
   flex-wrap: wrap;
@@ -489,8 +492,7 @@ nav .fa-solid {
     background-image: url(images/phonebg.jpg);
   }
   .header-text {
-    padding-top: 50px;
-    margin-top: auto;
+    margin-top: 70px;
     font-size: 16px;
   }
   .header-text h1 {
@@ -512,7 +514,7 @@ nav .fa-solid {
     transition: 0.5s;
   }
   .container {
-  padding: 5px 10%;
+  /* padding: 5px 10%; */
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
