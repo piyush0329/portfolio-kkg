@@ -150,6 +150,7 @@ nav ul li a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+  
 }
 .services-list div {
   background: #262626;
@@ -162,6 +163,7 @@ nav ul li a:hover::after {
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
+ 
 }
 .services-list div h2 {
   font-size: 30px;
@@ -174,6 +176,7 @@ nav ul li a:hover::after {
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
+  
 }
 .services-list div:hover {
   background: #ff004f;
@@ -426,10 +429,12 @@ nav .fa-solid {
   background-color: #ff004f;
 }
 .award {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: column;
+  
   grid-gap: 40px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 .award div {
   background: #262626;
@@ -439,10 +444,7 @@ nav .fa-solid {
   border-radius: 10px;
   border: 5px solid #262626;
 }
-.award div i {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
+
 .award div h2 {
   font-size: 30px;
   font-weight: 500;
@@ -460,50 +462,24 @@ nav .fa-solid {
 .award div:hover {
   border: 5px solid #ff004f;
 }
-
-.consultancy-projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
+.project  {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
 }
-
-.consultancy-projects div {
+.project div {
   background: #262626;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
   border: 5px solid #262626;
+  margin-top: 30px;
+  transition: 0.5s;
 }
-.consultancy-projects div i {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-.consultancy-projects div h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.consultancy-projects div a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-  cursor: none; 
-  
-}
-.consultancy-projects div:hover {
+.project div:hover{
   border: 5px solid #ff004f;
-}
-
-.link-style{
-  text-decoration: none;
-}
-
-.link-style:hover{
-  cursor:pointer;
+  transform: translateX(-10px)
 }
 
 /* css for small screen */
@@ -597,39 +573,6 @@ nav .fa-solid {
   margin-bottom: 15px;
   }
   
-  .consultancy-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-  }
-  .consultancy-projects div {
-  background: #262626;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  border: 5px solid #262626;
-}
-.consultancy-projects div i {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-.consultancy-projects div h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.consultancy-projects div a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-  cursor: none; 
+ 
   
-}
-.consultancy-projects div:hover {
-  border: 5px solid #ff004f;
-}
 }
