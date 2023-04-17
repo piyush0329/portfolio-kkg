@@ -19,10 +19,7 @@ body {
   background-position: center;
 }
 .container {
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
+ padding: 10px 10%;
   
 }
 nav {
@@ -492,7 +489,7 @@ nav .fa-solid {
     background-image: url(images/phonebg.jpg);
   }
   .header-text {
-    margin-top: 70px;
+    margin-top: 100px;
     font-size: 16px;
   }
   .header-text h1 {
@@ -514,11 +511,7 @@ nav .fa-solid {
     transition: 0.5s;
   }
   .container {
-  /* padding: 5px 10%; */
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
+  padding: 5px 5%;
 }
   nav ul li {
     display: block;
