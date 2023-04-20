@@ -117,6 +117,10 @@ nav ul li a:hover::after {
   cursor: pointer;
   position: relative;
 }
+.tab-links.active-link{
+  color: white;
+}
+
 .tab-links::after {
   content: "";
   width: 0;
@@ -144,6 +148,7 @@ nav ul li a:hover::after {
 }
 .tab-contents.active-tab {
   display: block;
+  color: white;
 }
 
 /* citations div */
