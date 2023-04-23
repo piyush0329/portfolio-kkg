@@ -158,6 +158,32 @@ nav ul li a:hover::after {
   padding: 10px;
 }
 
+/* selector styling */
+select {
+  border: 1px solid transparent;
+  margin-right: 10px;
+  background-color: #262626;
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  color: #fff;
+}
+
+select:focus, select:hover{
+  outline: none;
+  border: 1px solid #fff;
+  background-color: #ff004f;
+}
+
+select option{
+  background-color: #262626;
+  color: white;
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
 /* highlighst-section */
 .slideshow-container {
   max-width: 100%;
