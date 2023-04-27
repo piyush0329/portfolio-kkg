@@ -30,10 +30,10 @@
           
         </div>
     </section>
-    <section id="journals">
+    <section id="conferences">
       <div class="container">
-        <h1 class="sub-title"><span style="color:#ff004f">C</span>onferences <span style="font-size: 18px;">(16)</span></h1>
-          <div class="list-view">
+        <h1 class="sub-title"><span style="color:#ff004f">C</span>onferences <span style="font-size: 18px;"> <span id="element_count"></span></span></h1>
+          <div class="list-view" id="conferences-parent-div">
           
             <div>
               <a ><li>Gulista Khan, <strong>Kamal Kumar Gola</strong>, Rakesh Kumar Dwivedi, and Prashant Kumar. “Coding Framework for Energy Efficient Event Reliability Protocol for Wireless Communication Networks.” 2022 2nd International Conference on Technological Advancements in Computational Sciences (ICTACS), 2022. https://doi.org/10.1109/ ictacs56270.2022.9987885.</li></a>
@@ -90,5 +90,12 @@
 
     
     <script src="script.js"></script>
+    <script>
+      const parentDiv = document.querySelector('#conferences-parent-div');
+      const childDivs = parentDiv.getElementsByTagName("div");
+      const count = childDivs.length;
+      const countElement = document.getElementById('element_count');
+      countElement.innerHTML = "[" + count + "]";
+    </script>
   </body>
 </html>

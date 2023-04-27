@@ -42,8 +42,8 @@
     
     <section id="patents">
       <div class="container">
-          <h1 class="sub-title"><span style="color:#ff004f">P</span>atents <span style="font-size: 18px;">;"><span id="element_count"></span></span></h1>
-          <div class="services-list">
+          <h1 class="sub-title"><span style="color:#ff004f">P</span>atents <span style="font-size: 18px;"> <span id="element_count"></span></span></h1>
+          <div class="services-list" id="patents-parent-div">
               <div>
                   <h2>A system and a method for contactless thermal detection</h2>
                   <ul>
@@ -62,5 +62,12 @@
       </div>
     </section>
     <script src="script.js"></script>
+    <script>
+      const parentDiv = document.querySelector('#patents-parent-div');
+      const childDivs = parentDiv.getElementsByTagName("div");
+      const count = childDivs.length;
+      const countElement = document.getElementById('element_count');
+      countElement.innerHTML = "[" + count + "]";
+    </script>
   </body>
 </html>

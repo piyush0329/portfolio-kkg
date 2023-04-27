@@ -30,10 +30,10 @@
           
         </div>
     </section>
-    <section id="journals">
+    <section id="fdp">
       <div class="container">
-        <h1 class="sub-title"><span style="color:#ff004f">Faculty</span> Development Program <span style="font-size: 18px;">(41)</span></h1>
-        <div class="list-view">
+        <h1 class="sub-title"><span style="color:#ff004f">Faculty</span> Development Program <span style="font-size: 18px;"> <span id="element_count"></span></span></h1>
+        <div class="list-view" id="fdp-parent-div">
           <div>
             <a ><li>“5G Wireless Communication”, Organised by IEEE India Council, 28-30, July, 2022.</li></a>
           </div>
@@ -170,5 +170,12 @@
 
     
     <script src="script.js"></script>
+    <script>
+      const parentDiv = document.querySelector('#fdp-parent-div');
+      const childDivs = parentDiv.getElementsByTagName("div");
+      const count = childDivs.length;
+      const countElement = document.getElementById('element_count');
+      countElement.innerHTML = "[" + count + "]";
+    </script>
   </body>
 </html>

@@ -30,10 +30,10 @@
           
         </div>
     </section>
-    <section id="journals">
+    <section id="book-chapters">
       <div class="container">
-        <h1 class="sub-title" ><span style="color:#ff004f">Book</span> Chapters <span style="font-size: 18px;">(1)</span></h1>
-        <div class="list-view">
+        <h1 class="sub-title" ><span style="color:#ff004f">Book</span> Chapters <span style="font-size: 18px;"> <span id="element_count"></span></span></h1>
+        <div class="list-view" id="book-chapters-parent-div">
           <div>
             <a ><li>Gulista Khan, Rakesh Kumar Dwivedi, and <strong>Kamal Kumar Gola</strong>. “Comparative Analysis of Routing Algorithms for Underwater Sensor Network.” Pervasive Computing: A Networking Perspective and Future Directions, 2019, 31–46. https://doi.org/10.1007/ 978-981-13-3462-7_3.</li></a>
           </div>
@@ -47,5 +47,12 @@
 
     
     <script src="script.js"></script>
+    <script>
+      const parentDiv = document.querySelector('#book-chapters-parent-div');
+      const childDivs = parentDiv.getElementsByTagName("div");
+      const count = childDivs.length;
+      const countElement = document.getElementById('element_count');
+      countElement.innerHTML = "[" + count + "]";
+    </script>
   </body>
 </html>

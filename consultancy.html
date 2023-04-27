@@ -35,8 +35,8 @@
 
     <section id="cosnultancy-items">
         <div class="container">
-         <h1 class="sub-title"><span style="color: #ff004f">C</span>onsultancy<span style="font-size: 18px"> (1)</span></h1>
-            <div class="award" style="display: flex; flex-direction: column; flex-wrap: wrap; text-align: justify;" >
+         <h1 class="sub-title"><span style="color: #ff004f">C</span>onsultancy<span style="font-size: 18px"> <span id="element_count"></span></span></h1>
+            <div class="award" style="display: flex; flex-direction: column; flex-wrap: wrap; text-align: justify;" id="consultancy-parent-div">
                 <div> 
                     <h2>Consultancy Project of IT services (Texplas pvt. Ltd.) of 3 Lakhs. 
                      </h2>
@@ -47,5 +47,12 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+      const parentDiv = document.querySelector('#consultancy-parent-div');
+      const childDivs = parentDiv.getElementsByTagName("div");
+      const count = childDivs.length;
+      const countElement = document.getElementById('element_count');
+      countElement.innerHTML = "[" + count + "]";
+    </script>
   </body>
 </html>
