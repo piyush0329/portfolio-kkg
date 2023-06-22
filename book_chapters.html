@@ -11,6 +11,7 @@
   <body>
     <section>
         <div class="container">
+          <!-- NavBar -->
           <nav>
             <a href="index.html"><img src="images/logo1.png" class="logo" /></a>
             <ul id="sidemenu">
@@ -30,10 +31,14 @@
           
         </div>
     </section>
+    
+
     <section id="book-chapters">
       <div class="container">
         <h1 class="sub-title" ><span style="color:#ff004f">Book</span> Chapters <span style="font-size: 18px;"> <span id="element_count"></span></span></h1>
         <div class="list-view" id="book-chapters-parent-div">
+
+          <!-- Chapter items (always add to top)-->
           <div>
             <a ><li>Gulista Khan, Rakesh Kumar Dwivedi, and <strong>Kamal Kumar Gola</strong>. “Comparative Analysis of Routing Algorithms for Underwater Sensor Network.” Pervasive Computing: A Networking Perspective and Future Directions, 2019, 31–46. https://doi.org/10.1007/ 978-981-13-3462-7_3.</li></a>
           </div>
@@ -44,10 +49,10 @@
         </div>
       </div>
     </section>
-
     
     <script src="script.js"></script>
     <script>
+      // Counter
       const parentDiv = document.querySelector('#book-chapters-parent-div');
       const childDivs = parentDiv.getElementsByTagName("div");
       const count = childDivs.length;

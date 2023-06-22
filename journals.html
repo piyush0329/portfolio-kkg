@@ -11,6 +11,7 @@
   <body>
     <section>
         <div class="container">
+          <!-- NavBar -->
           <nav>
             <a href="index.html"><img src="images/logo1.png" class="logo" /></a>
             <ul id="sidemenu">
@@ -35,6 +36,7 @@
       <div class="container">
         <h1 class="sub-title"><span style="color:#ff004f;">J</span>ournals <span style="font-size: 18px;"> <span id="element_count"></span></span></h1>
         <div class="list-view" id="journals-parent-div">
+          <!-- Journal Items (always add to top) -->
           <div>
             <a ><li><strong>Kamal Kumar Gola</strong>, Brij Mohan Singh, Bhumika Gupta, Nishant Chaurasia, and Shikha Arya. “Multi‐Objective Hybrid Capuchin Search with Genetic Algorithm Based Hierarchical Resource Allocation Scheme with Clustering Model in Cloud Computing Environment.” Concurrency and Computation: Practice and Experience 35, no. 7 (2023). https://doi.org/ 10.1002/cpe.7606. </li></a>
           </div>
@@ -131,8 +133,10 @@
         </div>
       </div>
     </section>
+    
     <script src="script.js"></script>
     <script>
+      // Counter
       const parentDiv = document.querySelector('#journals-parent-div');
       const childDivs = parentDiv.getElementsByTagName("div");
       const count = childDivs.length;

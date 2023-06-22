@@ -1,3 +1,5 @@
+// Controls for Tab-Switching of ABOUT Section (AOI, KRA, Eductaion Experience)
+
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 function opentab(tabname) {
@@ -11,6 +13,7 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
+// Controls for SideBar Menu and NavBar
 var sidemeu = document.getElementById("sidemenu");
 function openmenu() {
   sidemeu.style.right = "0";
@@ -19,6 +22,7 @@ function closemenu() {
   sidemeu.style.right = "-200px";
 }
 
+// Controls for txt animation in ABOUT Section
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -71,6 +75,7 @@ window.onload = function () {
       new TxtType(elements[i], JSON.parse(toRotate), period);
     }
   }
+
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";

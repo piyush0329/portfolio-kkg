@@ -19,6 +19,7 @@
   <body>
     <section id="patent">
       <div class="container">
+        <!-- NavBar -->
         <nav>
           <a href="index.html"><img src="images/logo1.png" class="logo" /></a>
           <ul id="sidemenu">
@@ -44,6 +45,8 @@
       <div class="container">
           <h1 class="sub-title"><span style="color:#ff004f">P</span>atents <span style="font-size: 18px;"> <span id="element_count"></span></span></h1>
           <div class="services-list" id="patents-parent-div">
+
+            <!-- Patents Items (always add to top) -->
               <div>
                   <h2>A system and a method for contactless thermal detection</h2>
                   <ul>
@@ -61,8 +64,10 @@
               
       </div>
     </section>
+
     <script src="script.js"></script>
     <script>
+      // Counter
       const parentDiv = document.querySelector('#patents-parent-div');
       const childDivs = parentDiv.getElementsByTagName("div");
       const count = childDivs.length;
